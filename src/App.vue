@@ -99,7 +99,7 @@
       </Layout>
       <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
     </Layout>
-    <div class="fork-me-on-github"><a target="_blank" href="https://github.com/fizzday">Fork Me On Github</a></div>
+    <div class="fork-me-on-github"><a target="_blank" href="https://github.com/fizzday">Fork Me On Github <Icon type="social-github" /></a></div>
   </div>
   </div>
 </template>
