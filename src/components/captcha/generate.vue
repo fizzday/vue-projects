@@ -5,7 +5,7 @@
                 <div class="captcha"><img @click="getCaptcha()" :src="captcha_img" alt="" /></div>
                 <div class="github">
                     <p>前端地址: <Icon type="social-github" />
-                        <a target="_blank" href="https://github.com/fizzday/vue_projects">https://github.com/fizzday/vue_projects</a></p>
+                        <a target="_blank" href="https://github.com/fizzday/vue-projects">https://github.com/fizzday/vue-projects</a></p>
                     <p>后端地址: <Icon type="social-github" />
                         <a target="_blank" href="https://github.com/fizzday/fizzCaptcha">https://github.com/fizzday/fizzCaptcha</a></p>
                 </div>
