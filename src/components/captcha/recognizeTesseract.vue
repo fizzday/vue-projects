@@ -15,16 +15,12 @@
                     :before-upload="beforeUpload"
                     :on-success="handleSuccess"
                     action="http://127.0.0.1:5000/recognize_tesseract">
-                <Button type="ghost" icon="ios-cloud-upload-outline">Upload files</Button>
-                <!--<div style="padding: 20px 0">-->
-                <!--<Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>-->
-                <!--<p>Click or drag files here to upload</p>-->
-                <!--</div>-->
+                <Button type="ghost" icon="ios-cloud-upload-outline">上传文件并识别</Button>
             </Upload>
         </Row>
         <Row :class-name="imgClass">
             <Input v-model="imageUrl" placeholder="输入图片的url" value="" style="width: 60%"></Input>
-            <Button type="ghost" icon="ios-cloud-upload" @click="recognize">识别</Button>
+            <Button type="ghost" icon="ios-cloud-upload" @click="recognize">url上传并识别</Button>
         </Row>
         <br>
         <Row>
