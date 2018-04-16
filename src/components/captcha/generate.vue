@@ -2,7 +2,7 @@
     <div class="container">
         <Row>
             <div class="captcha_show">
-                <div class="captcha"><img @click="getCaptcha()" :src="captcha_img" alt="" /></div>
+                <div class="captcha"><img @click="getCaptcha()" :src="captcha_img" alt="" />点击图片可刷新</div>
                 <div class="github">
                     <p>前端地址: <Icon type="social-github" />
                         <a target="_blank" href="https://github.com/fizzday/vue-projects">https://github.com/fizzday/vue-projects</a></p>
@@ -55,11 +55,12 @@
             <p>&nbsp;</p>
             </Col>
             <Col :sm="2" :xs="4">字体大小</Col>
-            <Col :sm="6" :xs="20"><Slider @on-change="getCaptcha()" v-model="captcha.font.size" show-input :max=100></Slider></Col>
+            <Col :sm="6" :xs="20"><Slider @on-change="getCaptcha()" v-model="captcha.font.size" show-input :max=200></Slider></Col>
             <Col :sm="8" :xs="24" class="text-align-left">
             <RadioGroup @on-change="getCaptcha()" v-model="captcha.font.name">
                 <span>&nbsp;&nbsp;字体 :  &nbsp;</span>
                 <Radio label="MonacoYahei"><span>MonacoYahei</span></Radio>
+                <Radio label="SCPYahei"><span>SourceCodeProYahei</span></Radio>
             </RadioGroup>
             </Col>
             <Col :sm="8" :xs="24" class="text-align-left">&nbsp;&nbsp;字体颜色 : <ColorPicker @on-change="getCaptcha()"  v-model="captcha.font.color" recommend /></Slider></Col>
@@ -83,7 +84,7 @@
             </Col>
             <Col :sm="2" :xs="4">噪点数量</Col>
             <Col :sm="8" :xs="20">
-            <span class="col-children-mark">默认0时,随机数量(100~200)</span>
+            <span class="col-children-mark">默认0时,随机数量(100~500)</span>
             <Slider @on-change="getCaptcha()" v-model="captcha.point_num" show-input :max=1000 :step=50></Slider>
             </Col>
             <Col :sm="4" :xs="12" class="text-align-left">&nbsp;&nbsp;噪点颜色 : <ColorPicker @on-change="getCaptcha()"  v-model="captcha.point_color" recommend /></Slider></Col>

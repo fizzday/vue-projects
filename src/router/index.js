@@ -7,6 +7,8 @@ Vue.prototype.axios= axios
 
 // import HelloWorld from '@/components/HelloWorld'
 import captchaGenerate from '@/components/captcha/generate'
+import captchaRecognizeTesseract from '@/components/captcha/recognizeTesseract'
+import captchaCnnTrain from '@/components/captcha/captchaCnnTrain'
 import tmp from '@/components/tmp'
 
 
@@ -21,6 +23,16 @@ export default new Router({
       path: '/captcha/generate',
       name: 'captchaGenerate',
       component: captchaGenerate
+    },
+    {
+      path: '/captcha/recognize_tesseract',
+      name: 'captchaRecognizeTesseract',
+      component: captchaRecognizeTesseract
+    },
+    {
+      path: '/captcha/cnntrain',
+      name: 'captchaCnnTrain',
+      component: captchaCnnTrain
     },
     {
       path: '/tmp',
