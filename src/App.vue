@@ -136,12 +136,24 @@ export default {
                             },
                         ]
                     },
+                    {
+                        title:'工具类',
+                        name:'tools',
+                        icon:'ios-navigate',
+                        items:[
+                            {
+                                itemName:"calculator",
+                                itemTitle:'计算器'
+                            },
+                        ]
+                    },
                 ]
             },
             page: {
                 captchagenerate:'/captcha/generate',
                 captcharecognizetesseract:'/captcha/recognize_tesseract',
                 captchacnntrain:'/captcha/cnntrain',
+                calculator:'/calculator',
                 tmp:'/tmp',
             }
         }

@@ -9,6 +9,7 @@ Vue.prototype.axios= axios
 import captchaGenerate from '@/components/captcha/generate'
 import captchaRecognizeTesseract from '@/components/captcha/recognizeTesseract'
 import captchaCnnTrain from '@/components/captcha/captchaCnnTrain'
+import calculator from '@/components/calculator'
 import tmp from '@/components/tmp'
 
 
@@ -21,7 +22,7 @@ export default new Router({
     },
     {
       path: '/captcha/generate',
-      name: 'captchaGenerate',
+      name: 'captchaGenerate2',
       component: captchaGenerate
     },
     {
@@ -33,6 +34,12 @@ export default new Router({
       path: '/captcha/cnntrain',
       name: 'captchaCnnTrain',
       component: captchaCnnTrain
+    },
+      // ===========工具类开始============
+    {
+      path: '/calculator',
+      name: 'calculator',
+      component: calculator
     },
     {
       path: '/tmp',
