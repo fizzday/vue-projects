@@ -14,7 +14,7 @@
                     :show-upload-list="false"
                     :before-upload="beforeUpload"
                     :on-success="handleSuccess"
-                    action="http://127.0.0.1:5000/recognize_tesseract">
+                    :action="this.axios.defaults.baseURL+'/recognize_tesseract'">
                 <Button type="ghost" icon="ios-cloud-upload-outline">上传文件并识别</Button>
             </Upload>
         </Row>
